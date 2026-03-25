@@ -3,7 +3,6 @@ import Section from '../components/ui/Section';
 import { usePortfolioData } from '../data/portfolioData';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { Github, Linkedin } from '../components/Icons';
-import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 
 const Contact: React.FC = () => {
