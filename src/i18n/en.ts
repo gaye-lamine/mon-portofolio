@@ -1,68 +1,79 @@
 export const en = {
   nav: {
-    about: 'About',
-    skills: 'Skills',
-    experience: 'Experience',
-    projects: 'Projects',
-    contact: 'Contact'
+    about: 'Approach',
+    skills: 'Tech Stack',
+    experience: 'Track Record',
+    projects: 'Case Studies',
+    contact: "Let's Talk" 
   },
   hero: {
-    available: 'Available for new opportunities',
-    hi: "Hi, I'm",
-    description: 'Specializing in SaaS and mobile applications, I turn complex ideas into simple, high-performing, and scalable digital products.',
-    viewProjects: 'View my work',
+    available: '🚀 Available for critical backend missions',
+    hi: "I'm",
+    description: 'I help startups and enterprises scale their backend systems, design robust architectures, and manage high-performance applications.',
+    viewProjects: 'Explore my systems',
     downloadCv: 'Download CV'
   },
+  metrics: {
+    label1: 'Critical Systems',
+    label2: 'Scaling & Perf',
+    label3: 'Clean Architecture'
+  },
   about: {
-    title: 'About me',
-    subtitle: 'Discover my background and vision for development.',
-    goal: 'My goal is to design robust and scalable systems using best practices such as Clean Architecture and SOLID principles. I strive to create exceptional user experiences while ensuring optimal backend performance.',
-    vision: 'Product Vision',
-    visionDesc: "I don't just code; I actively participate in product thinking to maximize user value.",
-    perf: 'Performance & Scalability',
-    perfDesc: 'Continuous optimization of systems to support growing loads while remaining fluid.',
-    agile: 'Agile Collaboration',
-    agileDesc: 'Expertise in agile methodologies for iterative and transparent delivery.'
+    title: 'Engineering & Product',
+    subtitle: 'My approach bridges technical excellence and business value.',
+    goal: 'My goal isn\'t just to write code, but to engineer robust systems (Microservices, REST APIs) capable of handling massive load and scaling gracefully. I strictly apply Clean Architecture and Domain Driven Design principles.',
+    vision: 'Product & ROI Focus',
+    visionDesc: 'Every line of code must serve business growth and user retention.',
+    perf: 'High Availability',
+    perfDesc: 'Complex query optimization, aggressive caching strategies, and horizontal scaling.',
+    agile: 'Predictable Delivery',
+    agileDesc: 'Total transparency, rigorous CI/CD, and continuous integration on tight cycles.'
   },
   skills: {
-    title: 'Skills',
-    subtitle: 'Comprehensive technical expertise for large-scale projects.'
+    title: 'Stack & Infrastructure',
+    subtitle: 'Technologies I master in production.'
   },
   experience: {
-    title: 'Professional Experience',
-    subtitle: 'My journey as a software engineer across various international organizations.'
+    title: 'Track Record',
+    subtitle: 'My delivery history on SaaS products and critical systems.'
   },
   education: {
     title: 'Education & Certifications',
-    subtitle: 'My academic background and professional certifications.',
-    edu: 'Education',
-    cert: 'Certifications'
+    subtitle: 'Solid academic foundation validated by continuous professional certifications.',
+    edu: 'Foundations',
+    cert: 'Continuous Validation'
   },
   projects: {
-    title: 'Projects & Portfolio',
-    subtitle: 'A selection of SaaS products, mobile applications, and open-source contributions.'
+    title: 'Technical Case Studies',
+    subtitle: 'Analysis of business problems, architectural choices, and delivered results.',
+    problem: 'Business Challenge',
+    solution: 'Engineering Solution',
+    architecture: 'Systems Architecture',
+    results: 'Impact & Metrics',
+    viewLink: 'Live',
+    githubLink: 'Source'
   },
   contact: {
-    title: 'Contact Me',
-    subtitle: "Have a project or a question? Let's talk!",
-    infoTitle: 'Contact Information',
-    infoDesc: "I am currently looking for new opportunities as a lead or senior fullstack engineer. Feel free to contact me through any of the following channels.",
+    title: 'Ready to scale?',
+    subtitle: 'Let\'s architecture your next critical product.',
+    infoTitle: 'Let\'s talk tech',
+    infoDesc: 'I partner with teams facing complex backend, scaling, or structural challenges. Let\'s discuss your bottlenecks.',
     email: 'Email',
     phone: 'Phone',
-    location: 'Location',
+    location: 'Base of ops',
     formName: 'Name',
-    formNamePH: 'Your name',
-    formEmail: 'Email',
-    formEmailPH: 'your@email.com',
+    formNamePH: 'Your name or company',
+    formEmail: 'Work Email',
+    formEmailPH: 'cto@startup.com',
     formSubject: 'Subject',
-    formSubjectPH: 'Message subject',
-    formMessage: 'Message',
-    formMessagePH: 'Your message...',
-    formSend: 'Send Message'
+    formSubjectPH: 'Backend refactoring, scaling constraints...',
+    formMessage: 'The Challenge',
+    formMessagePH: 'What are your current technical bottlenecks?...',
+    formSend: 'Initiate Discussion'
   },
   footer: {
-    contact: 'Contact',
-    social: 'Social Links',
+    contact: 'Reach out',
+    social: 'Networks',
     rights: 'All rights reserved.'
   }
 };

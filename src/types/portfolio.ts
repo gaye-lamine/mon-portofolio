@@ -2,6 +2,10 @@ export interface Project {
   id: string;
   title: string;
   description: string;
+  problem?: string;
+  solution?: string;
+  architecture?: string[];
+  results?: string[];
   tech: string[];
   link?: string;
   github?: string;

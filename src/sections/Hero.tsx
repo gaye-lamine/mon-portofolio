@@ -10,17 +10,19 @@ const Hero: React.FC = () => {
 
   return (
     <section id="hero" style={{ 
-      minHeight: '80vh', 
+      minHeight: '100vh', 
       display: 'flex', 
       alignItems: 'center', 
       position: 'relative',
-      paddingTop: 'var(--spacing-xl)'
+      paddingTop: 'var(--spacing-xl)',
+      paddingBottom: 'var(--spacing-xl)'
     }}>
       <div className="container" style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
         gap: 'var(--spacing-xl)',
-        alignItems: 'center'
+        alignItems: 'center',
+        zIndex: 2
       }}>
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -33,157 +35,191 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             style={{ 
-              display: 'inline-block',
-              padding: '6px 12px',
+              display: 'inline-flex',
+              padding: '8px 16px',
               borderRadius: 'var(--radius-full)',
               background: 'var(--bg-glass-bright)',
-              border: '1px solid var(--border-glass)',
+              border: '1px solid var(--primary)',
               color: 'var(--primary)',
               fontSize: '0.85rem',
-              fontWeight: 600,
+              fontWeight: 700,
               textTransform: 'uppercase',
               letterSpacing: '1px',
-              marginBottom: '1rem'
+              marginBottom: '1.5rem',
+              boxShadow: 'var(--shadow-glow)'
             }}
           >
             {t.hero.available}
           </motion.div>
           
           <h1 style={{ 
-            fontSize: 'clamp(2.5rem, 8vw, 4.5rem)', 
-            marginBottom: '1rem',
-            lineHeight: 1.1,
-            letterSpacing: '-2px'
+            fontSize: 'clamp(3rem, 10vw, 6.5rem)', 
+            marginBottom: '0.5rem',
+            lineHeight: 1,
+            letterSpacing: '-3px',
+            textTransform: 'uppercase',
+            fontWeight: 900
           }}>
-            {t.hero.hi} <span style={{
+            <span style={{
               background: 'linear-gradient(90deg, var(--primary), var(--secondary))',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent'
-            }}>{portfolioData.name.split(' ')[0]}</span>
+            }}>{portfolioData.name}</span>
           </h1>
           
           <h2 style={{ 
-            fontSize: 'clamp(1.2rem, 4vw, 1.8rem)', 
-            color: 'var(--text-dim)',
-            fontWeight: 500,
+            fontSize: 'clamp(1.5rem, 5vw, 2.5rem)', 
+            color: 'var(--text-main)',
+            fontWeight: 600,
             marginBottom: 'var(--spacing-md)',
-            letterSpacing: '-0.5px'
+            letterSpacing: '-1px',
+            lineHeight: 1.2
           }}>
             {portfolioData.title}
           </h2>
           
           <p style={{ 
             color: 'var(--text-dim)', 
-            fontSize: '1.1rem', 
-            maxWidth: '550px',
+            fontSize: '1.15rem', 
+            maxWidth: '600px',
             marginBottom: 'var(--spacing-lg)',
-            lineHeight: 1.7
+            lineHeight: 1.8,
+            fontWeight: 400
           }}>
             {t.hero.description}
           </p>
           
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--spacing-sm)' }}>
-            <a href="#projects" className="btn-primary">
-              {t.hero.viewProjects} <ChevronRight size={18} />
-            </a>
+            <motion.a 
+              href="#projects" 
+              className="btn-primary"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {t.hero.viewProjects} <ChevronRight size={20} />
+            </motion.a>
           </div>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
+          initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
           style={{ position: 'relative', display: 'flex', justifyContent: 'center' }}
         >
           <div style={{
-            width: 'clamp(250px, 40vw, 450px)',
-            height: 'clamp(250px, 40vw, 450px)',
-            borderRadius: 'var(--radius-lg)',
+            width: 'clamp(280px, 45vw, 500px)',
+            height: 'clamp(280px, 45vw, 500px)',
+            borderRadius: '24px',
             background: 'linear-gradient(135deg, var(--bg-glass), var(--bg-glass-bright))',
-            border: '1px solid var(--border-glass)',
+            border: '2px solid var(--border-glass)',
             overflow: 'hidden',
             position: 'relative',
             boxShadow: 'var(--shadow-glass)'
           }}>
-            {/* Profile Image */}
             <img 
-              src="/Profile.jpeg" 
+              src="/profile.jpg" 
               alt={portfolioData.name}
               style={{
                 width: '100%',
                 height: '100%',
                 objectFit: 'cover',
                 objectPosition: 'center',
-                filter: 'grayscale(15%) contrast(1.05)',
-                transition: 'var(--transition-normal)'
+                filter: 'grayscale(20%) contrast(1.1)',
+                transition: 'transform 0.5s ease'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+              onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+              onError={(e) => {
+                // Fallback rendering standard shape if image missing
+                e.currentTarget.style.display = 'none';
+                (e.currentTarget.nextSibling as HTMLElement).innerHTML = `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:4rem;color:var(--primary);background:var(--bg-main)">LG</div>`;
               }}
             />
-            
-            {/* Decorative Overlay */}
+            {/* Fallback & Decorative Overlay container */}
             <div style={{
               position: 'absolute',
               top: 0,
               left: 0,
               width: '100%',
               height: '100%',
-              background: 'radial-gradient(circle at 30% 30%, var(--primary-glow) 0%, transparent 60%)',
+              background: 'radial-gradient(circle at 30% 30%, var(--primary-glow) 0%, transparent 70%)',
               pointerEvents: 'none'
             }} />
           </div>
-          
-          {/* Floating tags */}
-          <motion.div 
-            animate={{ y: [0, -10, 0] }} 
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="glass" 
-            style={{ position: 'absolute', top: '10%', right: '-5%', padding: '10px 15px', borderRadius: 'var(--radius-sm)' }}
-          >
-            🚀 Fullstack
-          </motion.div>
-          <motion.div 
-            animate={{ y: [0, 10, 0] }} 
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            className="glass" 
-            style={{ position: 'absolute', bottom: '15%', left: '-5%', padding: '10px 15px', borderRadius: 'var(--radius-sm)' }}
-          >
-            📱 Mobile Expert
-          </motion.div>
         </motion.div>
       </div>
+
+      {/* Senior Impact Metrics Bar */}
+      <motion.div 
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6, duration: 0.8 }}
+        style={{ 
+          position: 'absolute', 
+          bottom: 0, 
+          left: 0, 
+          width: '100%', 
+          borderTop: '1px solid var(--border-glass)', 
+          background: 'var(--bg-glass-bright)', 
+          backdropFilter: 'blur(10px)',
+          zIndex: 10
+        }}
+      >
+        <div className="container" style={{ 
+          display: 'flex', 
+          justifyContent: 'space-around', 
+          alignItems: 'center', 
+          padding: '1.5rem 0', 
+          flexWrap: 'wrap', 
+          gap: '1rem' 
+        }}>
+          <div className="metric-item">
+             <span className="metric-icon">🚀</span>
+             <span className="metric-text">{t.metrics.label1}</span>
+          </div>
+          <div className="metric-item">
+             <span className="metric-icon">⚡</span>
+             <span className="metric-text">{t.metrics.label2}</span>
+          </div>
+          <div className="metric-item">
+             <span className="metric-icon">🏗️</span>
+             <span className="metric-text">{t.metrics.label3}</span>
+          </div>
+        </div>
+      </motion.div>
 
       <style>{`
         .btn-primary {
           background: var(--primary);
-          color: var(--bg-deep); /* Force black text */
-          padding: 14px 28px;
+          color: var(--bg-deep);
+          padding: 16px 32px;
           border-radius: var(--radius-md);
-          font-weight: 600;
+          font-weight: 800;
+          font-size: 1.1rem;
           display: flex;
           align-items: center;
-          gap: 8px;
+          gap: 12px;
           box-shadow: var(--shadow-glow);
-          transition: transform var(--transition-fast), opacity var(--transition-fast);
+          border: 2px solid transparent;
+          transition: background 0.3s, transform 0.3s;
         }
-        .btn-primary:hover {
-          transform: translateY(-2px);
-          opacity: 0.9;
-        }
-        .btn-secondary {
-          background: var(--bg-glass-bright);
-          color: var(--text-main);
-          border: 1px solid var(--border-glass);
-          padding: 14px 28px;
-          border-radius: var(--radius-md);
-          font-weight: 600;
+        .metric-item {
           display: flex;
           align-items: center;
-          gap: 8px;
-          backdrop-filter: blur(8px);
-          transition: var(--transition-fast);
+          gap: 12px;
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: var(--text-main);
+          letter-spacing: -0.5px;
         }
-        .btn-secondary:hover {
-          background: var(--bg-glass);
-          border-color: var(--primary);
+        .metric-icon {
+          font-size: 1.5rem;
+        }
+        @media (max-width: 768px) {
+          #hero { min-height: auto; padding-bottom: 8rem; }
+          .metric-item { font-size: 0.95rem; }
+          .btn-primary { width: 100%; justify-content: center; }
         }
       `}</style>
     </section>

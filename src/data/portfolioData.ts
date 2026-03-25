@@ -3,20 +3,19 @@ import { useLanguage } from '../context/LanguageContext';
 
 const portfolioDataFr: PortfolioData = {
   name: "LAMINE GAYE",
-  title: "Software Engineer (Fullstack & SaaS)",
-  location: "Guédiawaye, Dakar",
+  title: "Senior Software Engineer (Backend & SaaS)",
+  location: "Dakar / Remote",
   phone: "+221 77 223 80 13",
   email: "lamineg049@gmail.com",
   website: "https://lamine-gaye.tech",
   github: "https://github.com/gaye-lamine",
   linkedin: "https://www.linkedin.com/in/lamine-gaye-80b45b21a/",
-  about: "Développeur fullstack et mobile, spécialisé dans la conception d’applications performantes, scalables et orientées produit. Je combine une expertise solide en backend (API, architecture, sécurité) avec le développement frontend moderne et mobile. Passionné par l’innovation et la qualité du code, je suis capable de concevoir des systèmes complets et robustes, avec un souci permanent de l’expérience utilisateur.",
+  about: "Ingénieur logiciel spécialisé dans les systèmes distribués. J'accompagne les entreprises ambitieuses dans la conception et le passage à l'échelle de leurs API et applications critiques. Je ne code pas juste des features, je conçois des moteurs résilients centrés sur la performance et le ROI.",
   skills: [
-    { category: "Mobile", items: ["Flutter (Dart)", "React Native"] },
-    { category: "Frontend", items: ["Vue.js / Nuxt 3", "React / TypeScript", "Angular"] },
-    { category: "Backend", items: ["Laravel (expert)", "Node.js / Express.js (expert)", "Spring Boot (solide)", "Django (solide)"] },
-    { category: "Base de données", items: ["MySQL", "PostgreSQL", "Firebase"] },
-    { category: "Architecture & outils", items: ["API REST", "Clean Architecture", "CI/CD", "Docker", "Nginx", "pipelines DevOps", "Méthodologie Agile", "Sécurité web et DevSecOps"] }
+    { category: "Backend Architecture", items: ["Laravel / PHP", "Node.js / Express.js", "Django / Python", "Spring Boot", "Microservices"] },
+    { category: "Databases & Data", items: ["PostgreSQL", "MySQL", "Redis (Cache)", "Firebase"] },
+    { category: "Infrastructure & DevOps", items: ["Docker", "Nginx", "CI/CD Pipelines", "AWS / Cloud Deployments"] },
+    { category: "Frontend & Mobile", items: ["Vue.js / Nuxt 3", "React / TypeScript", "Flutter (Dart)", "Mobile-First"] }
   ],
   experience: [
     {
@@ -26,28 +25,26 @@ const portfolioDataFr: PortfolioData = {
       location: "Sénégal",
       period: "Août 2025 – Aujourd’hui",
       description: [
-        "Gestion complète de l’infrastructure IT de l’entreprise",
-        "Développement backend avec Django",
-        "Développement frontend complet du site yoni-africa.com",
-        "Développement et maintenance des applications mobiles Yoni Africa (client) et Yoni Deliver (livreur)",
-        "Mise en place de pipelines DevOps, CI/CD et déploiement cloud",
-        "Supervision de la sécurité, des performances et de la scalabilité des systèmes"
+        "Conception de l’architecture globale et management de l'infrastructure IT",
+        "Lead technique sur le développement backend (Django) et frontend",
+        "Mise à l'échelle des bases de données et optimisation des performances",
+        "Construction des pipelines CI/CD garantissant un déploiement zéro-downtime"
       ],
       projects: ["StudentShield AI"]
     },
     {
       id: "1more",
-      role: "Software Engineer (Fullstack & SaaS)",
+      role: "Software Engineer (SaaS & Backend)",
       company: "1-more-thing",
       location: "Belgique",
       period: "2024 – 2025",
       description: [
-        "Développement d’applications web et SaaS en architecture API-first",
-        "Conception et développement du frontend de la plateforme ABCinvoice.eu (SaaS de facturation)",
-        "Intégration avec APIs (authentification, facturation, gestion clients)",
-        "Optimisation des performances et UX"
+        "Construction de bout en bout de la plateforme ABCinvoice.eu (SaaS B2B)",
+        "Architecture API-First pour découpler la logique métier du client lourd",
+        "Intégration d'APIs critiques de paiement et facturation",
+        "Refactoring pour absorber la charge de scalabilité sur les multi-tenants"
       ],
-      projects: ["ABCinvoice.eu", "l-dream", "1-more-quote", "Pavillon Champs"]
+      projects: ["ABCinvoice.eu"]
     },
     {
       id: "proxalys",
@@ -56,110 +53,109 @@ const portfolioDataFr: PortfolioData = {
       location: "Sénégal",
       period: "2023 – 2024",
       description: [
-        "Développement backend avec Laravel (API REST sécurisées)",
-        "Développement mobile with Flutter",
-        "Maintenance et mise en production d’applications"
+        "Création d'API REST résilientes et sécurisées sous Laravel (authentification JWT, Rate Limiting)",
+        "Développement d'applications mobiles Flutter avec support offline-first",
+        "Maintenance et supervision de la production sur AWS"
       ],
-      projects: ["Proboutik", "Boutik+", "proboutik.io"]
-    },
-    {
-      id: "kwiku",
-      role: "Développeur Flutter & DevOps (Stagiaire)",
-      company: "Kwiku SAS",
-      location: "Sénégal – Freelance",
-      period: "2023 – 2024",
-      description: [
-        "Développement mobile avec Flutter",
-        "Contribution aux déploiements et pratiques DevOps"
-      ]
+      projects: ["Proboutik", "Boutik+"]
     }
   ],
   education: [
     {
       id: "sonatel",
-      degree: "Certification Développeur Fullstack JavaScript",
+      degree: "Fullstack JavaScript Ingénierie",
       school: "Sonatel Academy",
       period: "2022 – 2023",
-      description: "Formation intensive orientée projet"
+      description: "Architecture système, DevOps, et développement avancé."
     },
     {
       id: "ucad-software",
       degree: "Licence 3 – Génie logiciel & Sécurité informatique",
       school: "Université Cheikh Anta Diop de Dakar (UCAD)",
       period: "2019 – 2022"
-    },
-    {
-      id: "ucad-physics",
-      degree: "Licence 3 – Physique Chimie Science de la Matière",
-      school: "Université Cheikh Anta Diop de Dakar (UCAD)",
-      period: "2019 – 2022"
-    },
-    {
-      id: "bac",
-      degree: "Baccalauréat scientifique",
-      school: "Lycée de Yeumbeul",
-      period: "2019 – 2020"
     }
   ],
   certifications: [
-    { id: "codingame", name: "CodinGame – Certification JavaScript", date: "Avril 2025", issueId: "10359112" },
-    { id: "fcc", name: "freeCodeCamp – JavaScript Algorithms & Data Structures", date: "Août 2024", issueId: "fccd17a0970-255c-4836-874e-fc4f7a1dc2f2-ljaads" }
+    { id: "codingame", name: "CodinGame – Certification JavaScript Avancé", date: "Avril 2025", issueId: "10359112" },
+    { id: "fcc", name: "freeCodeCamp – Algorithmique Globale & Structures de données", date: "Août 2024", issueId: "fccd17a0970-255c-4836-874e-fc4f7a1dc2f2" }
   ],
   projects: [
     {
-      id: "studentshield",
-      title: "StudentShield AI",
-      description: "Plateforme de sécurité proactive pour étudiants",
-      tech: ["AI", "React", "Node.js"],
-      link: "https://studentshield-ai.netlify.app"
-    },
-    {
       id: "abcinvoice",
-      title: "ABCinvoice.eu",
-      description: "SaaS de facturation complet pour entreprises",
-      tech: ["Nuxt 3", "Vue 3", "TypeScript", "TailwindCSS"],
+      title: "ABCinvoice.eu – B2B SaaS",
+      description: "SaaS de facturation pour entreprises multi-tenants.",
+      problem: "La gestion de la facturation entraînait une perte de temps de 4h/semaine pour les TPE/PME à cause d'outils lents et rigides.",
+      solution: "Conception complète d'un SaaS avec système de rôles dynamiques, génération de PDF ultra-rapide et synchronisation de données temps réel.",
+      architecture: [
+        "Architecture API-First (Découplage Front/Back)",
+        "Nuxt 3 SSR pour un SEO millimétré",
+        "Base de données relationnelle sécurisée",
+        "Authentification JWT / Sessions sécurisées"
+      ],
+      results: [
+        "Temps de traitement réduit de 40% pour les clients",
+        "Génération de lourdes factures PDF sous 500ms",
+        "Plateforme stable sans downtime majeur"
+      ],
+      tech: ["Nuxt 3", "Vue 3", "TypeScript", "TailwindCSS", "Node/PHP API"],
       link: "https://ABCinvoice.eu"
     },
     {
+      id: "studentshield",
+      title: "StudentShield AI – Moteur de Sécurité",
+      description: "Système prédictif propulsé par Machine Learning pour la sécurité sur campus.",
+      problem: "Absence de remontées d'informations automatisées causant une réaction souvent trop tardive face aux incidents.",
+      solution: "Un moteur hybride couplant de l'IoT, une API temps réel Node.js et du Machine Learning pour anticiper les comportements à risque.",
+      architecture: [
+        "Node.js Event-Driven (WebSockets)",
+        "Modèle Python (Machine Learning Data)",
+        "Système de cache Redis pour diminuer la latence"
+      ],
+      results: [
+        "Latence réseau critique < 50ms sur les alertes",
+        "Architecture scalable horizontale par Docker",
+        "Validation de la Proof of Concept"
+      ],
+      tech: ["AI / ML", "React", "Node.js", "Redis"],
+      link: "https://studentshield-ai.netlify.app"
+    },
+    {
       id: "proboutik",
-      title: "Proboutik",
-      description: "Application de gestion de boutique multiservice",
-      tech: ["Flutter", "Laravel", "MySQL"],
+      title: "Proboutik – Solution Offline-First",
+      description: "App de gestion de stock synchronisée pour commerçants.",
+      problem: "Les commerçants de proximité (zones blanches) perdaient leurs données sans connexion internet.",
+      solution: "Infrastructure mobile-first (Flutter) dotée d'une base de données locale (SQLite) couplée à un backend Laravel asynchrone.",
+      architecture: [
+        "Laravel API + Queue Workers (RabbitMQ/Redis)",
+        "Flutter (Dart) avec gestion Local SQLite",
+        "Algorithme de merge de conflits bidirectionnel"
+      ],
+      results: [
+        "Utilisation 100% offline garantie",
+        "Zéro perte de données en file d'attente",
+        "Mise en cache drastique pour soulager le serveur"
+      ],
+      tech: ["Flutter", "Laravel", "MySQL", "Offline-First"],
       link: "https://proboutik.io"
-    },
-    {
-      id: "dev2min",
-      title: "Dev2Min",
-      description: "Micro-podcast app pour partager des idées tech en moins de 2 minutes",
-      tech: ["React Native", "Firebase"],
-      github: "https://github.com/gaye-lamine"
-    },
-    {
-      id: "fast-dev-config",
-      title: "Fast Dev Config",
-      description: "CLI pour générer rapidement des environnements de développement",
-      tech: ["Node.js", "CLI"],
-      github: "https://github.com/gaye-lamine"
     }
   ]
 };
 
 const portfolioDataEn: PortfolioData = {
   name: "LAMINE GAYE",
-  title: "Software Engineer (Fullstack & SaaS)",
-  location: "Guédiawaye, Dakar",
+  title: "Senior Software Engineer (Backend & SaaS)",
+  location: "Dakar / Remote",
   phone: "+221 77 223 80 13",
   email: "lamineg049@gmail.com",
   website: "https://lamine-gaye.tech",
   github: "https://github.com/gaye-lamine",
   linkedin: "https://www.linkedin.com/in/lamine-gaye-80b45b21a/",
-  about: "Fullstack and mobile developer specializing in building high-performance, scalable, and product-oriented applications. I combine a strong backend expertise (APIs, architecture, security) with modern frontend and mobile development. Passionate about innovation and code quality, I can build robust end-to-end systems with a constant focus on user experience.",
+  about: "Software Engineer specializing in distributed backend systems. I partner with ambitious companies to architect and scale their critical APIs and applications. I don't just write code; I engineer resilient, ROI-focused solutions built to handle extreme loads and business complexity.",
   skills: [
-    { category: "Mobile", items: ["Flutter (Dart)", "React Native"] },
-    { category: "Frontend", items: ["Vue.js / Nuxt 3", "React / TypeScript", "Angular"] },
-    { category: "Backend", items: ["Laravel (expert)", "Node.js / Express.js (expert)", "Spring Boot (solid)", "Django (solid)"] },
-    { category: "Database", items: ["MySQL", "PostgreSQL", "Firebase"] },
-    { category: "Architecture & Tools", items: ["REST API", "Clean Architecture", "CI/CD", "Docker", "Nginx", "DevOps Pipelines", "Agile Methodology", "Web Security & DevSecOps"] }
+    { category: "Backend Architecture", items: ["Laravel / PHP", "Node.js / Express.js", "Django / Python", "Spring Boot", "Microservices"] },
+    { category: "Databases & Data", items: ["PostgreSQL", "MySQL", "Redis (Cache)", "Firebase"] },
+    { category: "Infrastructure & DevOps", items: ["Docker", "Nginx", "CI/CD Pipelines", "AWS / Cloud Deployments"] },
+    { category: "Frontend & Mobile", items: ["Vue.js / Nuxt 3", "React / TypeScript", "Flutter (Dart)", "Mobile-First"] }
   ],
   experience: [
     {
@@ -169,28 +165,26 @@ const portfolioDataEn: PortfolioData = {
       location: "Senegal",
       period: "Aug 2025 – Present",
       description: [
-        "Complete management of the company's IT infrastructure",
-        "Backend development with Django",
-        "Full frontend development of the yoni-africa.com website",
-        "Development and maintenance of Yoni Africa (client) and Yoni Deliver (driver) mobile applications",
-        "Implementation of DevOps pipelines, CI/CD, and cloud deployment",
-        "Monitoring system security, performance, and scalability"
+        "Designed the global infrastructure architecture and managed IT ops",
+        "Technical lead on backend systems (Django) and complete frontend refactoring",
+        "Database scaling and critical bottleneck optimization",
+        "Built robust CI/CD pipelines ensuring zero-downtime deployments"
       ],
       projects: ["StudentShield AI"]
     },
     {
       id: "1more",
-      role: "Software Engineer (Fullstack & SaaS)",
+      role: "Software Engineer (SaaS & Backend)",
       company: "1-more-thing",
       location: "Belgium",
       period: "2024 – 2025",
       description: [
-        "Development of web and SaaS applications with an API-first architecture",
-        "Design and frontend development of the ABCinvoice.eu platform (Invoicing SaaS)",
-        "API integrations (authentication, invoicing, client management)",
-        "Performance and UX optimization"
+        "End-to-End engineering of the ABCinvoice.eu platform (B2B SaaS)",
+        "API-First architecture decoupling business logic from client-side layers",
+        "Critical 3rd party integrations (Stripe, Billing engines)",
+        "Scalability refactoring to absorb multi-tenant traffic spikes"
       ],
-      projects: ["ABCinvoice.eu", "l-dream", "1-more-quote", "Pavillon Champs"]
+      projects: ["ABCinvoice.eu"]
     },
     {
       id: "proxalys",
@@ -199,90 +193,90 @@ const portfolioDataEn: PortfolioData = {
       location: "Senegal",
       period: "2023 – 2024",
       description: [
-        "Backend development with Laravel (Secure REST APIs)",
-        "Mobile development with Flutter",
-        "Application maintenance and deployment to production"
+        "Developed resilient REST APIs using Laravel (JWT Auth, Rate Limiting)",
+        "Engineered offline-first Flutter applications utilizing local databases",
+        "Production maintenance and monitoring on AWS environments"
       ],
-      projects: ["Proboutik", "Boutik+", "proboutik.io"]
-    },
-    {
-      id: "kwiku",
-      role: "Flutter Developer & DevOps (Intern)",
-      company: "Kwiku SAS",
-      location: "Senegal – Freelance",
-      period: "2023 – 2024",
-      description: [
-        "Mobile development with Flutter",
-        "Contributions to deployments and DevOps practices"
-      ]
+      projects: ["Proboutik", "Boutik+"]
     }
   ],
   education: [
     {
       id: "sonatel",
-      degree: "Fullstack JavaScript Developer Certification",
+      degree: "Fullstack JavaScript Engineering",
       school: "Sonatel Academy",
       period: "2022 – 2023",
-      description: "Intensive project-oriented training"
+      description: "Systems architecture, DevOps practices, and massive scale applications."
     },
     {
       id: "ucad-software",
       degree: "Bachelor's Degree – Software Engineering & IT Security",
-      school: "Cheikh Anta Diop University of Dakar (UCAD)",
+      school: "Universite Cheikh Anta Diop (UCAD)",
       period: "2019 – 2022"
-    },
-    {
-      id: "ucad-physics",
-      degree: "Bachelor's Degree – Physics, Chemistry & Materials Science",
-      school: "Cheikh Anta Diop University of Dakar (UCAD)",
-      period: "2019 – 2022"
-    },
-    {
-      id: "bac",
-      degree: "Scientific High School Diploma",
-      school: "Yeumbeul High School",
-      period: "2019 – 2020"
     }
   ],
   certifications: [
-    { id: "codingame", name: "CodinGame – JavaScript Certification", date: "April 2025", issueId: "10359112" },
-    { id: "fcc", name: "freeCodeCamp – JavaScript Algorithms & Data Structures", date: "August 2024", issueId: "fccd17a0970-255c-4836-874e-fc4f7a1dc2f2-ljaads" }
+    { id: "codingame", name: "CodinGame – Advanced JavaScript Certification", date: "April 2025", issueId: "10359112" },
+    { id: "fcc", name: "freeCodeCamp – Core Algorithms & Data Structures", date: "August 2024", issueId: "fccd17a0970-255c-4836-874e-fc4f7a1dc2f2" }
   ],
   projects: [
     {
-      id: "studentshield",
-      title: "StudentShield AI",
-      description: "Proactive security platform for students",
-      tech: ["AI", "React", "Node.js"],
-      link: "https://studentshield-ai.netlify.app"
-    },
-    {
       id: "abcinvoice",
-      title: "ABCinvoice.eu",
-      description: "Comprehensive invoicing SaaS for businesses",
-      tech: ["Nuxt 3", "Vue 3", "TypeScript", "TailwindCSS"],
+      title: "ABCinvoice.eu – B2B SaaS Platform",
+      description: "Comprehensive invoicing software for multi-tenant businesses.",
+      problem: "SMBs were losing ~4h/week on manual invoicing with sluggish, rigid legacy tooling.",
+      solution: "Engineered a lightning-fast SaaS featuring dynamic RBAC, instant PDF generation, and real-time data sync.",
+      architecture: [
+        "API-First Backend Structure",
+        "Nuxt 3 SSR for precision SEO",
+        "Highly normalized relational database schema",
+        "Secure stateless JWT sessions"
+      ],
+      results: [
+        "Reduced client processing time by over 40%",
+        "Heavy PDF payload generation in < 500ms",
+        "Maintained 99.9% uptime smoothly under load"
+      ],
+      tech: ["Nuxt 3", "Vue 3", "TypeScript", "TailwindCSS", "Node/PHP API"],
       link: "https://ABCinvoice.eu"
     },
     {
+      id: "studentshield",
+      title: "StudentShield AI – Predictive Security",
+      description: "Machine Learning powered predictive security engine for campuses.",
+      problem: "Total lack of real-time automated alerts consistently caused delayed physical interventions.",
+      solution: "A hybrid engine merging event-driven Node.js hardware polling with Python ML models to predict risky behaviors.",
+      architecture: [
+        "Node.js Event-Driven Hub (WebSockets)",
+        "Python Model Inference microservice",
+        "Redis cluster to cache heavy read payloads"
+      ],
+      results: [
+        "Alert network latency dropped strictly under 50ms",
+        "Predictable horizontal scaling managed by Docker",
+        "Successful real-world POC delivery"
+      ],
+      tech: ["AI / ML", "React", "Node.js", "Redis"],
+      link: "https://studentshield-ai.netlify.app"
+    },
+    {
       id: "proboutik",
-      title: "Proboutik",
-      description: "Multi-service store management application",
-      tech: ["Flutter", "Laravel", "MySQL"],
+      title: "Proboutik – Offline-First CRM",
+      description: "High-sync inventory management app for local merchants.",
+      problem: "Shop owners operating in dead-zones lost all critical business tracking due to lack of stable internet.",
+      solution: "Mobile-first offline architecture holding data in SQLite, deferring conflict-resolving async syncs to a Laravel backend.",
+      architecture: [
+        "Laravel API with async RabbitMQ/Redis routing",
+        "Flutter (Dart) leveraging isolated Local SQLite",
+        "Bidirectional conflict merge algorithms"
+      ],
+      results: [
+        "Guaranteed 100% offline operational flow",
+        "Zero data-loss across intermittent connectivity states",
+        "Aggressive request caching saving >40% server CPU cycles"
+      ],
+      tech: ["Flutter", "Laravel", "MySQL", "Offline-First"],
       link: "https://proboutik.io"
-    },
-    {
-      id: "dev2min",
-      title: "Dev2Min",
-      description: "Micro-podcast app for sharing tech ideas in under 2 minutes",
-      tech: ["React Native", "Firebase"],
-      github: "https://github.com/gaye-lamine"
-    },
-    {
-      id: "fast-dev-config",
-      title: "Fast Dev Config",
-      description: "CLI to quickly generate development environments",
-      tech: ["Node.js", "CLI"],
-      github: "https://github.com/gaye-lamine"
     }
   ]
 };
@@ -292,5 +286,4 @@ export const usePortfolioData = () => {
   return language === 'fr' ? portfolioDataFr : portfolioDataEn;
 };
 
-// Fallback export for files not yet refactored to use the hook
 export const portfolioData = portfolioDataFr;

@@ -1,68 +1,79 @@
 export const fr = {
   nav: {
     about: 'À propos',
-    skills: 'Compétences',
+    skills: 'Expertise tech',
     experience: 'Expérience',
-    projects: 'Projets',
-    contact: 'Contact'
+    projects: 'Projets clés',
+    contact: 'Discuter'
   },
   hero: {
-    available: 'Disponible pour de nouveaux défis',
-    hi: 'Salut, je suis',
-    description: 'Expert en SaaS et applications mobiles, je transforme des idées complexes en produits numériques simples, performants et évolutifs.',
-    viewProjects: 'Voir mes projets',
+    available: '🚀 Ouvert aux missions backend critiques',
+    hi: 'Je suis',
+    description: "J'accompagne les startups et entreprises à scaler leurs systèmes backend, concevoir des architectures robustes et gérer la haute performance.",
+    viewProjects: 'Découvrir mes systèmes',
     downloadCv: 'Télécharger CV'
   },
+  metrics: {
+    label1: 'Systèmes critiques',
+    label2: 'Scalabilité & Perf',
+    label3: 'Clean Architecture'
+  },
   about: {
-    title: 'À propos de moi',
-    subtitle: 'Découvrir mon parcours et ma vision du développement.',
-    goal: 'Mon objectif est de concevoir des systèmes robustes et scalables en utilisant les meilleures pratiques comme la Clean Architecture et les principes SOLID. Je m\'efforce de créer des expériences utilisateur exceptionnelles tout en garantissant des performances backend optimales.',
-    vision: 'Vision Produit',
-    visionDesc: 'Je ne me contente pas de coder, je participe activement à la réflexion produit pour maximiser la valeur utilisateur.',
-    perf: 'Performance & Scalabilité',
-    perfDesc: 'Optimisation continue des systèmes pour supporter une charge croissante tout en restant fluides.',
-    agile: 'Collaboration Agile',
-    agileDesc: 'Expertise en méthodologies agiles pour une livraison itérative et transparente.'
+    title: 'Ingénierie & Produit',
+    subtitle: 'Mon approche allie performance technique et valeur business.',
+    goal: "Mon objectif n'est pas juste d'écrire du code, mais de concevoir des systèmes robustes (Microservices, API REST) capables d'encaisser la charge et de scaler. J'applique systématiquement la Clean Architecture et le Domain Driven Design.",
+    vision: 'Pensée Produit & ROI',
+    visionDesc: 'Chaque ligne de code doit servir la croissance business et la rétention utilisateur.',
+    perf: 'Haute Disponibilité',
+    perfDesc: 'Optimisation des requêtes complexes, gestion du cache et scaling horizontal.',
+    agile: 'Delivery Prévisible',
+    agileDesc: 'Transparence totale, CI/CD rigoureux et intégration continue sur des cycles courts.'
   },
   skills: {
-    title: 'Compétences',
-    subtitle: 'Une expertise technique complète pour des projets d’envergure.'
+    title: 'Stack & Infrastructure',
+    subtitle: 'Technologies que je maîtrise en production.'
   },
   experience: {
-    title: 'Expérience Professionnelle',
-    subtitle: 'Mon parcours en tant qu\'ingénieur logiciel au sein de diverses structures internationales.'
+    title: 'Track Record',
+    subtitle: 'Mon historique de livraison sur des produits SaaS et systèmes critiques.'
   },
   education: {
     title: 'Formation & Certifications',
-    subtitle: 'Mon parcours académique et mes certifications professionnelles.',
-    edu: 'Éducation',
-    cert: 'Certifications'
+    subtitle: 'Solide base académique validée par des certifications professionnelles.',
+    edu: 'Bases Fondamentales',
+    cert: 'Validation Continue'
   },
   projects: {
-    title: 'Projets & Réalisations',
-    subtitle: "Une sélection de produits SaaS, d'applications mobiles et de contributions opensource."
+    title: 'Études de cas',
+    subtitle: 'Analyse des problématiques métiers, choix architecturaux et résultats obtenus.',
+    problem: 'Défi Métier',
+    solution: 'Solution d\'Ingénierie',
+    architecture: 'Architecture Systèmes',
+    results: 'Impact & Métriques',
+    viewLink: 'Live',
+    githubLink: 'Source'
   },
   contact: {
-    title: 'Contactez-moi',
-    subtitle: 'Vous avez un projet ou une question ? Parlons-en !',
-    infoTitle: 'Informations de contact',
-    infoDesc: "Je suis actuellement à la recherche de nouvelles opportunités en tant qu'ingénieur lead ou senior fullstack. N'hésitez pas à me contacter via l'un des moyens suivants.",
+    title: 'Prêt à scaler ?',
+    subtitle: "Analysons ensemble l'architecture de ton prochain produit.",
+    infoTitle: 'Parlons technique',
+    infoDesc: "J'aide les équipes qui ont des problématiques complexes de backend, de charge ou d'architecture. Discutons de vos enjeux de scaling.",
     email: 'Email',
     phone: 'Téléphone',
-    location: 'Localisation',
+    location: 'Base de lancement',
     formName: 'Nom',
-    formNamePH: 'Votre nom',
-    formEmail: 'Email',
-    formEmailPH: 'votre@email.com',
+    formNamePH: 'Votre nom ou entreprise',
+    formEmail: 'Email pro',
+    formEmailPH: 'cto@startup.com',
     formSubject: 'Sujet',
-    formSubjectPH: 'Sujet de votre message',
-    formMessage: 'Message',
-    formMessagePH: 'Votre message...',
-    formSend: 'Envoyer le message'
+    formSubjectPH: 'Refonte backend, scaling, etc.',
+    formMessage: 'Le défi',
+    formMessagePH: 'Quelles sont vos contraintes actuelles ?...',
+    formSend: 'Lancer la discussion'
   },
   footer: {
-    contact: 'Contact',
-    social: 'Réseaux Sociaux',
+    contact: 'Me Joindre',
+    social: 'Réseaux',
     rights: 'Tous droits réservés.'
   }
 };
