@@ -59,7 +59,8 @@ const Navbar: React.FC = () => {
             background: 'linear-gradient(90deg, var(--primary), var(--secondary))',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
-            letterSpacing: '-1px'
+            letterSpacing: '-1px',
+            textDecoration: 'none'
           }}
         >
           {portfolioData.name.split(' ')[0]}

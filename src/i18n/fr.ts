@@ -7,15 +7,15 @@ export const fr = {
     contact: 'Discuter'
   },
   hero: {
-    available: '🚀 Ouvert aux missions backend critiques',
+    available: '🚀 Ouvert aux missions Web & Mobile',
     hi: 'Je suis',
-    description: "J'accompagne les startups et entreprises à scaler leurs systèmes backend, concevoir des architectures robustes et gérer la haute performance.",
+    description: "J'accompagne les entreprises de bout en bout : conception d'architectures backend robustes, création d'interfaces frontend performantes et développement d'applications mobiles (Flutter).",
     viewProjects: 'Découvrir mes systèmes',
     downloadCv: 'Télécharger CV'
   },
   metrics: {
-    label1: 'Systèmes critiques',
-    label2: 'Scalabilité & Perf',
+    label1: 'Backend scalable',
+    label2: 'Frontend & Mobile',
     label3: 'Clean Architecture'
   },
   about: {
@@ -57,7 +57,7 @@ export const fr = {
     title: 'Prêt à scaler ?',
     subtitle: "Analysons ensemble l'architecture de ton prochain produit.",
     infoTitle: 'Parlons technique',
-    infoDesc: "J'aide les équipes qui ont des problématiques complexes de backend, de charge ou d'architecture. Discutons de vos enjeux de scaling.",
+    infoDesc: "J'aide les équipes à relever des défis d'ingénierie complexes, que ce soit pour consolider un backend, propulser un SaaS frontend ou déployer une application mobile multiplateforme.",
     email: 'Email',
     phone: 'Téléphone',
     location: 'Base de lancement',

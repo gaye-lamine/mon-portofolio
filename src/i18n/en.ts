@@ -7,15 +7,15 @@ export const en = {
     contact: "Let's Talk" 
   },
   hero: {
-    available: '🚀 Available for critical backend missions',
+    available: '🚀 Available for Web & Mobile missions',
     hi: "I'm",
-    description: 'I help startups and enterprises scale their backend systems, design robust architectures, and manage high-performance applications.',
+    description: 'I help companies end-to-end by architecting robust backend systems, building high-performance frontends, and developing seamless cross-platform mobile apps (Flutter).',
     viewProjects: 'Explore my systems',
     downloadCv: 'Download CV'
   },
   metrics: {
-    label1: 'Critical Systems',
-    label2: 'Scaling & Perf',
+    label1: 'Scalable Backend',
+    label2: 'Frontend & Mobile',
     label3: 'Clean Architecture'
   },
   about: {
@@ -57,7 +57,7 @@ export const en = {
     title: 'Ready to scale?',
     subtitle: 'Let\'s architecture your next critical product.',
     infoTitle: 'Let\'s talk tech',
-    infoDesc: 'I partner with teams facing complex backend, scaling, or structural challenges. Let\'s discuss your bottlenecks.',
+    infoDesc: 'I partner with teams resolving complex engineering challenges—from scaling resilient backends to deploying flawless cross-platform mobile experiences.',
     email: 'Email',
     phone: 'Phone',
     location: 'Base of ops',

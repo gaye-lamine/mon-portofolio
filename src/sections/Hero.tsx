@@ -118,7 +118,7 @@ const Hero: React.FC = () => {
             boxShadow: 'var(--shadow-glass)'
           }}>
             <img 
-              src="/profile.jpg" 
+              src="/Profile.jpeg" 
               alt={portfolioData.name}
               style={{
                 width: '100%',

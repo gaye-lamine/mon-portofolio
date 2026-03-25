@@ -13,9 +13,8 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
-    // TODO: Send to API
-    alert("Pragmatisme Senior : Cette action déclenchera votre Webhook ou API d'envoi mail en production.");
+    const mailtoLink = `mailto:lamineg049@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`De: ${formData.name} (${formData.email})\n\n${formData.message}`)}`;
+    window.location.href = mailtoLink;
   };
 
   return (

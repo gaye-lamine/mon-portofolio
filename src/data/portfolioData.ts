@@ -3,7 +3,7 @@ import { useLanguage } from '../context/LanguageContext';
 
 const portfolioDataFr: PortfolioData = {
   name: "LAMINE GAYE",
-  title: "Senior Software Engineer (Backend & SaaS)",
+  title: "Senior Software Engineer (Backend, Frontend & Mobile)",
   location: "Dakar / Remote",
   phone: "+221 77 223 80 13",
   email: "lamineg049@gmail.com",
@@ -26,11 +26,11 @@ const portfolioDataFr: PortfolioData = {
       period: "Août 2025 – Aujourd’hui",
       description: [
         "Conception de l’architecture globale et management de l'infrastructure IT",
-        "Lead technique sur le développement backend (Django) et frontend",
+        "Lead technique sur le développement backend (Django) et mobile (Flutter)",
         "Mise à l'échelle des bases de données et optimisation des performances",
         "Construction des pipelines CI/CD garantissant un déploiement zéro-downtime"
       ],
-      projects: ["StudentShield AI"]
+      projects: ["Yoni Africa", "Yoni Deliver"]
     },
     {
       id: "1more",
@@ -143,7 +143,7 @@ const portfolioDataFr: PortfolioData = {
 
 const portfolioDataEn: PortfolioData = {
   name: "LAMINE GAYE",
-  title: "Senior Software Engineer (Backend & SaaS)",
+  title: "Senior Software Engineer (Backend, Frontend & Mobile)",
   location: "Dakar / Remote",
   phone: "+221 77 223 80 13",
   email: "lamineg049@gmail.com",
@@ -166,11 +166,11 @@ const portfolioDataEn: PortfolioData = {
       period: "Aug 2025 – Present",
       description: [
         "Designed the global infrastructure architecture and managed IT ops",
-        "Technical lead on backend systems (Django) and complete frontend refactoring",
+        "Technical lead on backend systems (Django) and mobile applications (Flutter)",
         "Database scaling and critical bottleneck optimization",
         "Built robust CI/CD pipelines ensuring zero-downtime deployments"
       ],
-      projects: ["StudentShield AI"]
+      projects: ["Yoni Africa", "Yoni Deliver"]
     },
     {
       id: "1more",
